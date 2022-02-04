@@ -1,0 +1,72 @@
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials//mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.wishlist {
+    &__item {
+        @include cardBoardStyle;
+        @include borderStyle;
+        @include font-stack-body-mobile;
+        color:$text-color;
+        padding: 0.5rem;
+        @include flex(space-between, center, column, wrap);
+        width: 90%;
+        @include tablet {
+            width:31%;
+            max-height: 30rem;
+            min-height: 30rem;
+            @include font-stack-body-tablet-desktop;
+            color:$text-color;
+        }
+        @include desktop {
+            width: 23%;
+            min-width:23%;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    &__title {
+        width: 100%;
+        @include font-stack-page-header-mobile;
+        margin-bottom: 0.5rem;
+        text-align: center;
+        letter-spacing: 0.15rem;
+        @include tablet {
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        }
+    }
+
+    &__poster{
+        width: 50%;
+        object-fit: cover;
+        margin-bottom: 0.5rem;
+        @include borderStyle;
+        @include tablet {
+            min-height: 12rem;
+            max-height: 12rem;
+        }
+    }
+
+    &__container {
+        @include tablet {
+            min-height: 7rem;
+            max-height: 7rem;
+        }
+    }
+
+    &__info {
+        margin-bottom: 0.5rem;
+        @include tablet {
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            overflow: hidden;
+        }
+    }
+}

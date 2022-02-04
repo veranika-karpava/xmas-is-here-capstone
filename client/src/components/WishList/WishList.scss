@@ -1,0 +1,29 @@
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials//mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.wishlist {
+
+    &__list {
+        @include flex(space-between, center, column, nowrap);
+        padding: 0;
+        @include padding;
+        gap: 1.5rem;
+        @include tablet {
+            @include flex(flex-start, center, row, wrap);
+            gap: 1.5rem;
+        }
+        @include desktop {
+            @include flex(flex-start, center, row, wrap);
+            gap: 1.5rem;
+        }
+    }
+
+    &__error-message{
+        @include messageStyle;
+        @include font-stack-section-header;
+        @include tablet {
+            @include font-stack-section-header-tablet;
+        }
+    }
+}

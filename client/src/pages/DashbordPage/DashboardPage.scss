@@ -1,0 +1,23 @@
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials//mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.dashboard-section {
+    &__greeting-container{
+    @include flex(space-between, center, column, nowrap);
+    margin: 1.5rem;
+    letter-spacing: 0.15rem;
+    @include font-stack-page-header-mobile;
+    @include tablet {
+        @include font-stack-page-header-tablet-desktop;
+        margin: 3rem 4rem 0;
+        }
+    @include desktop {
+        margin: 3rem;
+        }
+    }
+
+    &__greeting{
+        margin-bottom: 1rem;
+    }
+}

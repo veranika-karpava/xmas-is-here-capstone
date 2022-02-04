@@ -1,0 +1,19 @@
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials//mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.footer {
+    width: 100%;
+    min-height: 30vh;
+    @include padding;
+    @include flex(space-between, flex-end, row, nowrap);
+
+    &__text {
+        width:100%;
+        text-align: center;
+        @include font-stack-body-mobile;
+        @include tablet {
+            @include font-stack-body-tablet-desktop;  
+        }
+    }
+}

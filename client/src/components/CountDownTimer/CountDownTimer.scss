@@ -1,0 +1,88 @@
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials//mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.countdown-timer {
+    @include font-stack-section-header;
+    margin: 2.5rem auto;
+    @include dashBoardStyle;
+    @include borderStyle;
+    @include padding;
+    width: 75%;
+    @include flex(center, center, column, nowrap);
+    @include tablet {
+        margin: 4rem auto;
+    }
+    @include desktop {
+        width: 65%;
+    }
+
+    &__image-container{
+        width: 100%;
+        @include desktop{
+            width: 70%;
+        }
+    }
+        
+    &__image{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__container-card {
+        @include flex(center, center, column, nowrap);
+        width: 80%;
+        @include tablet {
+            @include flex(center, center, row, nowrap);
+            width: 90%;
+        }
+        @include desktop {
+            width: 80%;
+        }
+    }
+
+    &__card {
+        @include flex(flex-start, center, row, nowrap);
+        width: 100%;
+        @include tablet{
+            @include flex(center, center, column, nowrap);
+            width: 80%;
+        }
+    }
+
+    &__value {
+        width: 40%;
+        padding: 0.5rem;
+        @include font-stack-page-header-mobile;
+        @include tablet {
+            @include font-stack-page-header-tablet-desktop;
+        }
+    }
+
+    &__title {
+        width: 60%;
+        padding: 0.5rem;
+        @include font-stack-page-header-mobile;
+        color:  $bg-color-header;
+        @include tablet {
+            @include font-stack-page-header-tablet-desktop;
+            color:  $bg-color-header;
+        }
+    }
+
+    &__container-text {
+        @include flex(flex-start, stretch, column, nowrap);
+        width: 90%;
+        margin-top: 0.5rem;
+    }
+
+    &__text{
+        text-align: center;
+        @include font-stack-page-header-mobile;
+        letter-spacing: 0.08rem;
+        @include tablet {
+            @include font-stack-page-header-tablet-desktop;
+            letter-spacing: 0.2rem;
+        }
+    }
+}

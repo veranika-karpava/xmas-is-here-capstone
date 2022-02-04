@@ -1,0 +1,96 @@
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials//mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.movie-card {
+    @include dashBoardStyle;
+    @include flex(space-between, center, column, nowrap);
+    margin: 2.5rem 1.5rem 1.5rem;
+    padding: 1rem;
+    @include tablet {
+        width: 75%;
+        margin: 3rem auto;
+        padding: 1.5rem 1.5rem 0.5rem;
+    }
+    @include desktop {
+        margin: 3rem auto;
+        width: 65%;
+        padding: 1.5rem 1.5rem 1rem;
+        }
+
+    &__title {
+        width: 100%;
+        @include font-stack-page-header-mobile;
+        margin-bottom: 1rem;
+        text-align: center;
+        letter-spacing: 0.15rem;
+        @include tablet {
+            @include font-stack-page-header-tablet-desktop;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__container-movie-info{
+        width: 100%;
+        @include flex(space-between, center, column, nowrap);
+        @include tablet {
+            @include flex(flex-start, flex-start,row, nowrap);
+            gap: 1.5rem;
+        }
+        @include desktop {
+            gap: 2.25rem;
+        }
+    }
+
+    &__image{
+        width: 90%;
+        max-width: 15rem;
+        object-fit: cover;
+        @include borderStyle;
+        @include tablet {
+            max-width: 25rem;
+            width: 48%;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__container-info{
+        width: 100%;
+        @include flex(space-between, flex-start, column, nowrap);
+        margin-top: 1rem;
+        @include font-stack-body-mobile;
+        color:$text-color;
+        @include tablet {
+            width: 48%;
+            @include font-stack-body-tablet-desktop;
+            color:$text-color;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__info{
+        margin-bottom: 0.5rem;
+        @include tablet {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__button-container{
+        width: 100%;
+        @include flex(space-between, center, column-reverse, nowrap);
+        @include tablet {
+            @include flex(space-between, center, row, nowrap);
+            width: 85%;
+            max-width: 28.25rem;
+            align-self: flex-end;
+        }
+    }
+
+    &__error-message{
+        @include messageStyle;
+        @include font-stack-section-header;
+        @include tablet {
+        @include font-stack-section-header-tablet;
+        }
+    }
+}

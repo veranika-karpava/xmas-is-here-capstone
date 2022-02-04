@@ -1,0 +1,95 @@
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials//mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.sign-up {
+    margin: 1.5rem auto;
+    @include borderStyle;
+    @include cardBoardStyle;
+    @include padding;
+    width: 75%;
+    @include tablet {
+        margin: 3rem auto;
+        }
+    @include desktop {
+        width: 65%;
+    }
+
+    &__title {
+        text-align: center;
+        @include font-stack-page-header-mobile;
+        letter-spacing: 0.15rem;
+        margin-bottom: 1rem;
+        @include tablet {
+            @include font-stack-page-header-tablet-desktop;
+        }
+    }
+
+    &__form{
+        width: 80%;
+        margin: 0 auto;
+        @include flex(space-between, center, column, nowrap);
+        @include desktop{
+            width: 50%;
+        }
+    }
+
+    &__form-container {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    &__input {
+        @include inputStyle;
+
+    &::placeholder {
+        @include font-stack-body-mobile;
+        @include tablet {
+            @include font-stack-body-tablet-desktop;
+        }
+    }
+
+    &[type = "text"] {
+    @include font-stack-body-mobile;
+    @include tablet {
+        @include font-stack-body-tablet-desktop;
+        }
+    }
+
+    &[type = "password"] {
+        @include font-stack-body-mobile;
+        @include tablet {
+            @include font-stack-body-tablet-desktop;
+            }
+        }
+
+    }
+
+    &__add-info {
+        width: 100%;
+        @include flex(space-between, center, column, nowrap);
+        @include font-stack-body-mobile;
+        @include tablet {
+            @include font-stack-body-tablet-desktop;
+        }
+    }
+
+    &__question{
+        margin-bottom: 0.5rem;
+    }
+
+    &__link{
+        @include font-stack-body-mobile;
+        @include tablet {
+            @include font-stack-body-tablet-desktop;
+        }
+    }
+
+    &__error-message{
+        text-align: center;
+        @include font-stack-body-mobile;
+        @include tablet {
+            @include font-stack-body-tablet-desktop;
+        }
+    }
+}

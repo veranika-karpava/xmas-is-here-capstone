@@ -1,0 +1,50 @@
+[
+    {
+        "day": "1",
+        "month": "1",
+        "title": "Elf",
+        "image": "/images/elf.png"
+    },
+    {
+        "day": "2",
+        "month": "1",
+        "title": "Santa",
+        "image": "/images/santa3.png"
+    },
+    {
+        "day": "3",
+        "month": "1",
+        "title": "Santa",
+        "image": "/images/santa5.png"
+    },
+    {
+        "day": "4",
+        "month": "1",
+        "title": "Rudolf",
+        "image": "/images/friend.png"
+    },
+    {
+        "day": "5",
+        "month": "1",
+        "title": "Snowman",
+        "image": "/images/snowman.png"
+    },
+    {
+        "day": "6",
+        "month": "1",
+        "title": "Santa",
+        "image": "/images/santa1.png"
+    },
+    {
+        "day": "7",
+        "month": "1",
+        "title": "Santa",
+        "image": "/images/santa4.png"
+    },
+    {
+        "day": "8",
+        "month": "1",
+        "title": "Mrs. Claus",
+        "image": "/images/mrsclause.png"
+    }
+]

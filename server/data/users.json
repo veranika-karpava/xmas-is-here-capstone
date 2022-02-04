@@ -1,0 +1,34 @@
+[
+  {
+    "username": "VeranikaKarpava",
+    "id": "c448e2aa-29e6-478a-a725-3033baf14891",
+    "name": "Veranika Karpava",
+    "password": "$2b$08$5jkm6LRaPFMQmYk1kWhPleR2psudjD6GDgmrG1UDV3pFZkOKqPjey",
+    "wishlist": [
+      {
+        "movieId": "tt0293815",
+        "title": "Friday After Next",
+        "released": "22 Nov 2002",
+        "runtime": "85 min",
+        "poster": "https://m.media-amazon.com/images/M/MV5BYTE2MmFmZTgtY2RhNC00MTE4LWExZjQtMmQ4NDIxNTg1YzI4XkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_SX300.jpg",
+        "plot": "Working as security guards, Craig and Day-Day run into the thief who stole their Christmas presents."
+      },
+      {
+        "movieId": "tt3043594",
+        "title": "Kristin's Christmas Past",
+        "released": "23 Nov 2013",
+        "runtime": "83 min",
+        "poster": "https://m.media-amazon.com/images/M/MV5BNjMyMDQyNTczOV5BMl5BanBnXkFtZTgwNzg4ODE3MDE@._V1_SX300.jpg",
+        "plot": "Given the opportunity to visit her estranged family on Christmas Eve 1996, Kristin Cartwright hopes to change her past in order to improve her current life in 2013."
+      },
+      {
+        "movieId": "tt0218967",
+        "title": "The Family Man",
+        "released": "22 Dec 2000",
+        "runtime": "125 min",
+        "poster": "https://m.media-amazon.com/images/M/MV5BYzYzMTQ4NDYtNWRkZi00NTYxLThlZDItMzI1MmU1MmU5ZWQ3XkEyXkFqcGdeQXVyNDA5Mjg5MjA@._V1_SX300.jpg",
+        "plot": "A fast-lane investment broker, offered the opportunity to see how the other half lives, wakes up to find that his sports car and girlfriend have become a mini-van and wife."
+      }
+    ]
+  }
+]

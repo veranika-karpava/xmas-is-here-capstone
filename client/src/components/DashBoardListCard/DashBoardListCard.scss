@@ -1,0 +1,90 @@
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials//mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.dashboard {
+    @include flex(space-between, center, column, nowrap);
+    margin: 1.5rem;
+    letter-spacing: 0.15rem;
+    @include tablet {
+        margin: 4rem;
+        }
+    @include desktop {
+        margin: 3rem;
+        @include flex(center, center, row, nowrap);
+        gap: 4rem;
+        }
+
+    &__container-movies,
+    &__container-wishlist{
+        width: 100%;
+        @include dashBoardStyle;
+        @include padding;
+        @include flex(space-between, center, row, nowrap);
+        @include font-stack-section-header;
+        @include tablet {
+            @include font-stack-page-header-tablet-desktop;
+        }
+        @include desktop {
+            @include flex(space-between, center, column, nowrap);
+            &:hover{
+                transform: scale(1.1);
+                }
+            }
+        }
+
+    &__container-wishlist{
+        margin: 2.5rem 0rem;
+        @include flex(space-between, center, row-reverse, nowrap);
+        @include desktop {
+            @include flex(space-between, center, column, nowrap);
+            margin: 0rem;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+    }
+
+    &__container-cartoons{
+        @include dashBoardStyle;
+        @include padding;
+        margin: 2.5rem 0rem;
+        width: 100%;
+        @include flex(space-between, center, row-reverse, nowrap);
+        @include font-stack-section-header;
+        @include tablet {
+            @include font-stack-page-header-tablet-desktop;
+            margin: 4rem 0rem; 
+        }
+        @include desktop {
+            @include flex(space-between, center, column, nowrap);
+            margin: 0rem;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+    &__link {
+        @include desktop {
+            width: 30%;
+            }
+    }
+
+    &__image{
+        width: 50%;
+        object-fit: cover;
+        @include desktop {
+            width: 100%; 
+        }
+    }
+
+    &__title{
+        width: 50%;
+        text-align: center;
+        @include desktop {
+            width: 100%; 
+            min-height: 132px;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+@use "../partials/variables" as *;
+
+
+@mixin tablet {
+    @media screen and (min-width: $tablet-breakpoint) {
+        @content;        
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+        @content;        
+    }
+}
+
+@mixin flex($justify-content: flex-start, $align-items: stretch, $flex-direction: row, $flex-wrap: nowrap){
+    display:flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
+    }
+
+    @mixin borderStyle {
+        border: none;
+        border-radius: 6px;
+    }
+
+    @mixin dashBoardStyle {
+        background-color: $bg-color-white;
+        opacity: 0.8;
+        box-shadow: 0px 0px 15px 10px $bg-color-white;
+    }
+
+    @mixin cardBoardStyle {
+        background-color: $bg-color-white;
+        opacity: 0.8;
+        box-shadow: 0px 0px 8px 5px $bg-color-white;
+    }
+
+    @mixin inputStyle{
+        width: 100%;
+        outline: none;
+        height: 2.25rem;
+        border: none;
+        border-bottom: 2px solid $bg-color-header;
+        box-shadow: 0 0 0px 1000px $bg-color-white inset;
+    }
+
+    @mixin padding{
+        padding: 1rem;
+        @include tablet {
+            padding: 2.25rem;
+        }
+        @include tablet {
+            padding: 2.5rem;
+        }
+    }
+
+    @mixin messageStyle {
+        letter-spacing: 0.15rem;
+        text-align: center;
+        padding: 8rem 1rem;
+        width: 100%;
+        @include tablet{
+            padding: 15rem 1rem;
+        }
+    }
+

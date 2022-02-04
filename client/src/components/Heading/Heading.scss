@@ -1,0 +1,21 @@
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials//mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.heading{
+    @include flex(space-between, center, column, nowrap);
+    margin: 1.5rem 1.5rem 0;
+    letter-spacing: 0.15rem;
+    @include font-stack-page-header-mobile;
+    @include tablet {
+        @include font-stack-page-header-tablet-desktop;
+        margin: 3rem 4rem 0;
+        }
+    @include desktop {
+        margin: 3rem 3rem 0;
+        }
+
+    &___title{
+        text-align: center;
+    }
+}
