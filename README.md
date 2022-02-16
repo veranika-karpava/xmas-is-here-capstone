@@ -1,5 +1,5 @@
 # Xmas-Is-Here
-XmasIsHere is a full-stack web application that allows users to select Christmas movie randomly every day from the 1st of December to the 24th of December.
+XmasIsHere is a full-stack web application that allows users to select Christmas movies randomly every day from the 1st of December to the 24th of December.
 
 Current functionality:
 * register and log in to the website
