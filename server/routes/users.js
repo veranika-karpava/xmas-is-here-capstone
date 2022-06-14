@@ -4,9 +4,8 @@ const fs = require('fs');
 const jwt = require("jsonwebtoken");
 const userRouter = express.Router();
 const bcrypt = require('bcrypt');
-// const JWT_SECRET = process.env.JWT_SECRET;
+const JWT_SECRET = process.env.JWT_SECRET;
 
-JWT_SECRET = '40a17ee02871ff0ddedd9a5abebb206393215113fcd459af04be0d1bdff60768';
 
 // function for reading data in users.json
 const readFile = () => {
