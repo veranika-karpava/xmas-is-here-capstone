@@ -9,8 +9,7 @@ import WishListPage from './pages/WishListPage/WishListPage';
 import Footer from './components/Footer/Footer';
 import Snowfall from 'react-snowfall';
 
-console.log('API_URL', process.env.REACT_APP_API_URL);
-console.log('API_KEY', process.env.REACT_APP_API_KEY_OMBD);
+
 
 const App = () => {
 
